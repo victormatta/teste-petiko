@@ -36,7 +36,64 @@ Clique em "Send" para enviar a solicitação.
    - `appid`: `chave_api_fornecida_no_site`
    - `units`: `metric`
 5. Clique em "Send".
-6. A resposta deve ser algo como o exemplo fornecido.
+6. A resposta deve ser algo como:
+
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [
+    {
+      "dt": 1596564000,
+      "main": {
+        "temp": 22.3,
+        "feels_like": 21.8,
+        "temp_min": 22.3,
+        "temp_max": 22.3,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1009,
+        "humidity": 83,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02d"
+        }
+      ],
+      "clouds": {
+        "all": 20
+      },
+      "wind": {
+        "speed": 3.4,
+        "deg": 150
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2020-08-04 03:00:00"
+    },
+    ...
+  ],
+  "city": {
+    "id": 3448439,
+    "name": "São Paulo",
+    "coord": {
+      "lat": -23.5475,
+      "lon": -46.6361
+    },
+    "country": "BR",
+    "population": 10021295,
+    "timezone": -10800,
+    "sunrise": 1596532300,
+    "sunset": 1596573930
+  }
+}
 
 ## Parte 2: Simulação de Atendimento ao Cliente
 
@@ -48,6 +105,7 @@ Um colaborador da Petiko está enfrentando dificuldades para acessar relatórios
 **Mensagem do Cliente:** “Não consigo acessar os relatórios no sistema ERP, está dando erro.”
 
 **Resposta Simulada:**
+
 Olá [Nome do Cliente],
 
 Entendo que você está tendo dificuldades para acessar os relatórios. Vamos resolver isso juntos.
@@ -63,10 +121,9 @@ Caso o problema persista, por favor, me avise para que possamos investigar mais 
 Agradeço pela sua paciência e compreensão.
 
 Atenciosamente,
+
 [Victor].
 
-markdown
-Copiar código
 
 ## Parte 3: Resolução de Problemas Técnicos
 
@@ -95,6 +152,7 @@ Copiar código
 **Cliente:** "Estou enfrentando problemas ao tentar acessar os relatórios no sistema ERP."
 
 **Resposta por E-mail:**
+
 Olá [Nome do Cliente],
 
 Entendo que você está enfrentando um problema ao gerar relatórios no ERP. Para resolver isso, por favor, siga os passos abaixo:
@@ -116,4 +174,5 @@ Caso essas soluções não funcionem, por favor, me avise para que possamos inve
 Agradeço pela sua paciência e compreensão.
 
 Atenciosamente,
+
 [Victor].
