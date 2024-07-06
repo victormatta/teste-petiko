@@ -11,7 +11,7 @@ Um colaborador da Petiko precisa obter dados de previsão do tempo para otimizar
 - **URL:** `https://api.openweathermap.org/data/2.5/forecast`
 - **Parâmetros:**
   - `q`: Nome da cidade (por exemplo, q=São Paulo)
-  - `appid`: Chave da API (9e07ac36e69952cc8f25802a5321059a)
+  - `appid`: Chave da API (obtida ao fazer login no site e acessar painel de controle)
   - `units`: Unidade de medida (por exemplo, units=metric para obter a temperatura em Celsius)
 - **Headers:** Nenhum header adicional é necessário para esta solicitação.
 
